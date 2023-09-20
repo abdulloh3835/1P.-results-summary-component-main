@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    /* -->  or I can do (margin: 0 auto;) for .container instead */
+    align-items: center;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    width: 50%;
+    /* margin: 0 auto; */
+}
+
+/* result part */
+#result {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 1.5rem;
+    width: 50%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.usual_color {
+    color: hsl(241, 100%, 89%);
+}
+
+.white_color {
+    color: hsl(0, 0%, 100%);
+}
+
+.circular {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    padding: 1.5rem 2rem;
+    width: 110px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.circular>div>p {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 5px auto 0;
+}
+
+.circular>p {
+    margin: 0;
+}
+
+.your_result_paragraph {
+    font-size: 20px;
+    margin: 10px auto 32px;
+}
+
+.great_paragraph {
+    font-size: 1.5rem;
+    margin: 32px auto 0;
+}
+
+.last_paragraph {
+    padding: 0 1rem;
+}
+
+
+
+
+
+/* summary part */
+#summary {
+    padding: 1.5rem 2rem;
+    width: 50%;
+}
+
+.summary_p {
+    margin: 10px auto 25px;
+    font-size: 20px;
+    font-weight: 520;
+    color: hsl(224, 30%, 27%);
+}
+
+.four_div>p {
+    padding: 12px 13px;
+}
+
+.reaction_div {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    border-radius: 10px;
+    color: hsla(0, 100%, 67%, 0.7);
+}
+
+.memory_div {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    border-radius: 10px;
+    color: hsla(39, 100%, 56%, 0.7);
+}
+
+.verbal_div {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    border-radius: 10px;
+    color: hsla(166, 100%, 37%, 0.7);
+}
+
+.visual_div {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    border-radius: 10px;
+    color: hsla(234, 85%, 45%, 0.7);
+}
+
+span {
+    margin-left: 5px;
+}
+
+.span_inside_span {
+    float: right;
+    color: grey;
+}
+
+.span_inside_span>span {
+    color: hsl(224, 30%, 27%);
+    font-weight: 520;
+}
+
+.continue_div>button {
+    padding: 12px 105px;
+    border: none;
+    margin-top: 2rem;
+    border-radius: 25px;
+    background: linear-gradient(hsl(250, 100%, 67%), hsl(246, 81%, 54%));
+    color: hsl(0, 0%, 100%);
+}
+
+
+@media (max-width: 375px) {
+    body {
+        height: 100%;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #result {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        padding: 20px 0 10px;
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .last_paragraph {
+        padding: 0 2rem;
+    }
+
+    #summary {
+        padding: 20px 22px 10px;
+        width: 85%;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .continue_div>p {
+        margin-top: 24px;
+        background: linear-gradient(hsl(224, 30%, 27%), hsl(224, 30%, 27%));
+    }
+}
